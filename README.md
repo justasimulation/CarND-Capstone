@@ -181,6 +181,7 @@ It is trained on [Boshc dataset](https://hci.iwr.uni-heidelberg.de/node/6132), i
 ```
 
 ![](imgs/classification_network.png)
+
 4. Combined detection/classification operation takes approximately 0.2-0.25 seconds on my machine which is quite slow,
 so I had to put the pipeline into a dedicated thread.
 5. Multiple traffic lights can be detected. The following simplified rule is used to get a single classification for the whole image:
